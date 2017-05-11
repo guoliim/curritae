@@ -11,5 +11,7 @@ app.use(ctx => {
     send(ctx, './index.html')
 });
 
+app.on('error', err => console.error('server error', err))
+
 app.listen(3000);
 console.log('listening on port 3000');
