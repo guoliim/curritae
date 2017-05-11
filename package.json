@@ -21,6 +21,7 @@
     "koa": "^2.2.0",
     "koa-logger": "^2.0.1",
     "koa-send": "^4.1.0",
+    "koa-static": "^3.0.0",
     "postcss-cssnext": "^2.10.0",
     "postcss-import": "^9.1.0",
     "postcss-load-config": "^1.2.0",
