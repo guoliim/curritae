@@ -12,9 +12,12 @@ class Container extends React.Component {
     }
 
     componentDidMount() {
-        fetch("./api/config.json").then(res => {
+        fetch("./api/config.json",{
+
+        }).then(res => {
             if(res.ok) {
                 res.json().then(data => {
+                    console.log(data);
                     let detail = data;
                     this.setState({detail: detail});
                 });
