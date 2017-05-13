@@ -1,13 +1,22 @@
 const path = require('path');
+const webpack = require('webpack');
 
 const config = {
-    entry: {
-        'app': './src/index.js'
-    },
+    // entry: {
+    //     'app': './src/index.js'
+    // },
+    entry: [
+        //TODO MARK
+        require.resolve('webpack-hot-middleware/client'),
+        // 'eventsource-polyfill',
+        // 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
+        './src/index.js',
+    ],
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: '[name].bundle.js',
-        publicPath: '/',
+        filename: 'bundle.js',
+        // important for hmr
+        publicPath: '/dist/',
     },
     module: {
         rules: [
@@ -18,6 +27,7 @@ const config = {
                         presets: [
                             ['es2015', { 'module': false }],
                             'react',
+                            'react-hmre',
                         ]
                     }
                 }
@@ -44,6 +54,11 @@ const config = {
         ]
     },
     devtool: "cheap-eval-source-map",
+    plugins: [
+        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoEmitOnErrorsPlugin(),
+    ]
 };
 
 module.exports = config;

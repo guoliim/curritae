@@ -17,7 +17,7 @@ class Cet_6 extends React.Component{
     render() {
         return(
             <div id="cet-6">
-                <p className="lang-cet">CET-6</p>
+                <p className="lang-cet">CET-6 TEST await er hhhhhh hjhj hdhdh</p>
                 <p className="lang-detail">{this.state.lang}</p>
             </div>
         )
