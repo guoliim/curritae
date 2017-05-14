@@ -21,6 +21,7 @@
     "css-loader": "^0.28.0",
     "koa": "^2.2.0",
     "koa-logger": "^2.0.1",
+    "koa-router": "^7.1.1",
     "koa-send": "^4.1.0",
     "koa-webpack-middleware": "^1.0.4",
     "postcss-cssnext": "^2.10.0",
@@ -34,8 +35,7 @@
     "style-loader": "^0.16.1",
     "url-loader": "^0.5.8",
     "webpack": "^2.3.2",
-    "webpack-hot-middleware": "^2.18.0",
-    "webpack-require": "^0.0.16"
+    "webpack-hot-middleware": "^2.18.0"
   },
   "repository": "https://github.com/guoliim/resume-by-react.git"
 }
