@@ -1,9 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Head from './Head'
-import Abstract from './Abstract'
 import MainContainer from './MainContainer'
-import Contact from './Contact'
 
 class Container extends React.Component {
     constructor(props) {
@@ -32,12 +30,8 @@ class Container extends React.Component {
     render() {
         return(
             <div className="mdl-card mdl-shadow--2dp resume">
-                {/*<div>{this.state.name}</div>*/}
-                {/*由下到上层级嵌套？*/}
                 <Head name={this.state.detail.name}/>
-                <Abstract abstract={this.state.detail.abstract}/>
                 <MainContainer detail={this.state.detail}/>
-                <Contact contact={this.state.detail.contact}/>
             </div>
         )
     }

@@ -8,11 +8,17 @@
     }
 }
 
+html, body {
+    font-family: "方正兰亭黑简体","Helvetica", "Arial", sans-serif;
+}
+
 .resume {
     @apply (--resume);
 }
 
 .head {
+    display: flex;
+    flex-direction: row;
     height: 160px;
     color: #ffffff;
     background-color:#908e82;
@@ -20,18 +26,27 @@
 }
 
 .name {
-    margin-left: 8%;
-    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+    margin-top: 36px;
     margin-bottom: 5px;
     padding-top: 24px;
-    font-size: 72px;
-    font-family: 'Kaiti SC';
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.communication {
+    margin-top: 36px;
+    padding-top: 24px;
+    margin-left: 36px;
+    font-size: 20px;
+    line-height: 22px;
 }
 
 .position {
-    margin-left: 9.5%;
-    font-size: 21px;
-    font-family: 'Weibei SC'
+    margin-left: 4px;
+    font-size: 24px;
 }
 
 .abstract {
@@ -41,7 +56,7 @@
 }
 
 .abstract-detail {
-    margin-left: 9.5%;
+    margin-left: 4.5%;
     margin-right: 8%;
     margin-top: 20px;
     line-height: 20px;
@@ -61,7 +76,11 @@
 
 .item-left {
     margin-top: 40px;
-    margin-left: 22%;
+    margin-left: 8rem;
+}
+
+.skill-left {
+    margin-top: 30px;
 }
 
 .label {
@@ -92,14 +111,14 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-right: 56px;
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 36px;
 }
 
 .edu-item_last {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-right: 56px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 36px;
 }
 
@@ -109,22 +128,23 @@
 
 .edu-item_right {
     margin-left: 60px;
-    font-size: 16px
+    font-size: 18px
 }
 
 .lang-cet {
     margin-right: 15%;
     margin-bottom: 6px;
     margin-top: 6px;
-    font-size: 16px;
-    font-weight: bold
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .lang-detail {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-right: 56px;
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .label-svg_small {
@@ -140,24 +160,24 @@
 }
 
 .work-title_letter {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold
 }
 
 .time {
     margin-right: 56px;
     margin-bottom: 0;
-    font-size: 4px;
+    font-size: 12px;
     font-family: 'Stencil Std';
 }
 
 .work-detail {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-right: 56px;
-    margin-bottom: 0;
+    margin-bottom: 1em;
     padding-left: 0;
     margin-top: 0;
-    font-size: 14px
+    font-size: 16px
 }
 
 .work-spacing {
@@ -179,8 +199,8 @@
 
 .skill {
     margin-top: 40px;
-    margin-left: 15%;
-    margin-right: 8%;
+    margin-left: 4em;
+    margin-right: 2%;
 }
 
 .skill-label {
@@ -198,7 +218,8 @@
 }
 
 .skill-title_letter {
-    font-weight: bold
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .skill-detail {
@@ -206,12 +227,15 @@
     margin-right: 10%;
     padding-left: 0;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 1em;
+    font-size: 16px;
 }
 
 .exp {
     margin-top: 40px;
-    margin-left: 15%;
+    margin-left: 4em;
+    margin-bottom: 16px;
+    margin-right: 2%;
 }
 
 .exp-label {
@@ -222,17 +246,19 @@
 
 .exp-title {
     margin-right: 10%;
-    margin-bottom: 0
 }
 
 .exp-a {
     color: #908e82;
     text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .exp-detail {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin-right: 10%
+    margin-right: 10%;
+    font-size: 16px;
 }
 
 .contact {

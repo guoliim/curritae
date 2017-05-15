@@ -18,7 +18,7 @@ class Skill extends React.Component{
 
     render() {
         return(
-            <div id="skill" className="item-left">
+            <div id="skill" className="item-left skill-left">
                 <Label_skill/>
                 {this.state.skills.map((skill) =>
                     <Front_end key={skill.item} value={skill}/>

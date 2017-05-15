@@ -14,40 +14,40 @@
   "work":[{
     "item":"丽水市规划成果管理信息系统",
     "time":"2014.8 ~ 2015.1",
-    "detail":["开发网页中上传并在线浏览文件的可视化widget","编写下载上传文件的后台功能","优化页面布局,编写用户操作手册"]
+    "detail":["sdd开发网页中上传并在线浏览文件的可视化widget","编写下载上传文件的后台功能","优化页面布局,编写用户操作手册"]
   },{
-    "item":"参与专项基金:面向重点场所的建筑物内外一体化三维建模方法",
+    "item":"专项基金:面向重点场所的建筑物内外一体化三维建模方法",
     "time":"2015.4 ~ 2016.3",
-    "detail":["优化基于LISP的CAD二次开发代码,便于读取DXF文件的语义与几何信息","使用CityGML建模标准,构建三维建筑模型","使用citygml4java、java编写部分CityGML模型生成算法"]
+    "detail":["优化基于LISP的CAD二次开发代码,便于读取DXF文件的语义信息","使用CityGML建模标准,构建三维建筑模型","使用citygml4java、java编写部分CityGML模型生成算法"]
   },{
     "item":"双流县管线业务审批系统",
     "time":"2016.4 ~ 2016.6",
     "detail":["前端架构设计","阅读工作流实现机制原理","团队合作,制定工作计划,分配任务,保证工作进度"]
   }],
   "skill":[{
-    "item":"HTML/CSS",
+    "item":"-HTML/CSS",
     "detail":["掌握语义化的 HTML，模块化的 CSS，实现较复杂的布局","熟悉已标准化的 HTML5 / CSS3 新特性，实验项目中能尝试使用未广泛实现的新标准"]
   },{
-    "item":"JavaScript",
+    "item":"-JavaScript",
     "detail":["熟悉ES2015","熟悉JavaScript及框架搭建响应式Web App","熟悉JavaScript框架AngularJS","熟悉JavaScript框架React","熟悉 webpack 工具","了解JavaScript类库JQuery"]
   },{
-    "item":"其它",
+    "item":"-其它",
     "detail":["熟悉前端MV*模型","了解基本的后台开发NodeJS","了解基本web相关技术: Socket.io、Express","使用项目管理和协同工具: Git","了解Oracle的使用","了解LISP语言"]
   }],
   "experiences":[{
-    "item":"angular-resume-generator",
+    "item":"-angular-resume-generator",
     "link":"https://github.com/holyshawn/angular-resume-generator.git",
-    "detail":"这份简历生成器,使用 AngularJS 轻应用框架设计响应页面,读取 json 个人数据,借助 Material Design Lite 设计 Material Design 风格简历,通过 Node.js http-server 驱动页面生成。"
+    "detail":"这份简历生成器,使用 AngularJS 轻应用框架设计响应页面,读取 json 个人数据,借助 Material Design Lite 设计简历风格,通过 Node.js http-server 驱动页面生成。"
   },{
-    "item":"fantasie",
+    "item":"-fantasie",
     "link":"https://github.com/holyshawn/fantasie.git",
-    "detail":"fantasie 项目的前端部分,实践了 CRUD SPA 的 MusicRadio Web App,使用了HTML5、CSS3、Material Design Lite Css框架、Angular.js等技术,利用双队列解决了从后台获取高清无损音频文件时,等待时间过长的问题,还与后台协作利用关键字播放符合筛选条件的音频集合,提高了Web性能,成为日常PC端播放音乐平台。"
+    "detail":"fantasie 项目的前端部分,实践了 CRUD SPA 的 MusicRadio Web App,使用了HTML5、CSS3、Material Design Lite Css框架、Angular.js等技术,利用双队列解决了从后台获取高清无损音频文件时,等待时间过长的问题。"
   },{
-    "item": "guoliim-blog",
+    "item": "-guoliim-blog",
     "link": "https://github.com/guoliim/guoliim-blog",
     "detail": "基于 Gatsby 搭建的静态博客生成器，此博客使用 React 框架，使用 Typography.js 进行博客内容排版，并且还在持续改进中。"
   },{
-    "item": "typography-theme-trajan",
+    "item": "-typography-theme-trajan",
     "link": "https://github.com/guoliim/typography-theme-trajan",
     "detail": "基于 typography-theme-wordpress-2016 主题而设置的 Typography.js 主题，npm下载量超过400次(于2017-05-11)"
   },{

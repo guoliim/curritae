@@ -16,18 +16,25 @@ class Head extends React.Component {
 
     render() {
         return(
-            <div>
+
                 <div className="head">
-                    <h1 className="name">{this.state.name}</h1>
-                    <p className="position">前端工程师</p>
+                    <div className="name">
+                        <div>{this.state.name}</div>
+                        <div className="position">前端工程师</div>
+                    </div>
+                    <div className="communication">
+                        <div>tel:15651027309</div>
+                        <div>email:im@guoli.im</div>
+                        <div>github: https://github.com/guoliim</div>
+                    </div>
                 </div>
-            </div>
+
         )
     }
 }
 
 Head.propTypes = {
-    Head: PropTypes.string,
+    name: PropTypes.string,
 }
 
 export default Head
