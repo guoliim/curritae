@@ -2,3 +2,4 @@ node_modules
 .idea
 *.log
 /lib/node_modules/
+/lib/dist/
