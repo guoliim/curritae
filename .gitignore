@@ -3,3 +3,6 @@ node_modules
 *.log
 /lib/node_modules/
 /lib/dist/
+/dist/
+/lib/index.html
+/lib/compiled-html.js
