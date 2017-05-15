@@ -6,4 +6,6 @@ node_modules
 /dist/
 /lib/index.html
 /lib/compiled-html.js
-/.babelrc
+/public/
+/lib/builded-html.js
+/lib/developed-html.js

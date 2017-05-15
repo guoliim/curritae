@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "develop": "cd lib/ && node index.js",
-    "build": "cd lib/ && node build.js",
-    "babel": "cd lib/ && node babel-config.js",
+    "develop": "cd lib/ && babel develop-html.js --out-file developed-html.js && node index.js",
+    "build": "cd lib/ && babel build-html.js --out-file builded-html.js && node build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
