@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "develop": "cd lib/ && babel develop-html.js --out-file developed-html.js && node index.js",
-    "build": "cd lib/ && babel build-html.js --out-file builded-html.js && node build.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "babel lib --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run compile && cd dist/ && node build.js",
+    "develop": "npm run compile && cd dist/ && node index.js"
   },
   "keywords": [
     "resume"
@@ -18,9 +19,11 @@
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.0",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.23.0",
     "babel-preset-react-hmre": "^1.1.1",
     "css-loader": "^0.28.0",
+    "flow-bin": "^0.46.0",
     "json5": "^0.5.1",
     "koa": "^2.2.0",
     "koa-logger": "^2.0.1",
