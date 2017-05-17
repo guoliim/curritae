@@ -10,3 +10,4 @@ node_modules
 /lib/builded-html.js
 /lib/developed-html.js
 /dist.bak/
+/coverage/
