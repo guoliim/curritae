@@ -6,9 +6,6 @@ import babelConfig from '../lib/babel-config'
 jest.mock('path')
 import path from 'path'
 
-const require = jest.fn();
-require.resolve = () => "/Users/guoli/Codes/material-resume-react/node_modules/webpack-hot-middleware/client.js"
-
 const babelrc_build = {
     "presets": [
         "flow",
@@ -86,7 +83,7 @@ const build = {
 
 const develop = {
     "entry": [
-        "/Users/guoli/Codes/material-resume-react/node_modules/webpack-hot-middleware/client.js",
+        require.resolve('webpack-hot-middleware/client'),
         "../src/index.js",
     ],
     "output": {
