@@ -86,7 +86,7 @@ In lib/api/config.json config you resume items
 - [ ] advance test
 - [ ] add eslint
 
-##LICENSE##
+## LICENSE
 
 This project is under the MIT license. See the [LICENSE](./LISENCE) file for the full license text
 
