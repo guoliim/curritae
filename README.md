@@ -71,6 +71,10 @@ In lib/api/config.json config you resume items
 
 + **Caution** Do not remove the item in config
 
+## Issues
+
++ test build.js for comment running build(), without testing add running build()
+
 ## Todo
 - [ ] Add Getting Started
 - [ ] dynamic config api
