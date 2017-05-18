@@ -8,7 +8,11 @@
     "compile": "babel lib --out-dir dist",
     "build": "npm run compile && cd dist/ && node build.js",
     "develop": "npm run compile && cd dist/ && node index.js",
-    "test": "jest"
+    "test": "jest && codecov"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "keywords": [
     "resume"
