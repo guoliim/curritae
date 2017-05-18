@@ -3,7 +3,8 @@ import compileWebpack from '../lib/webpack.complieConfig'
 jest.mock('../lib/babel-config')
 import babelConfig from '../lib/babel-config'
 
-//TODO add mock for 'path'
+jest.mock('path')
+import path from 'path'
 
 const babelrc_build = {
     "presets": [
@@ -199,13 +200,19 @@ babelConfig.mockImplementation(() => babelrc_build)
     .mockImplementationOnce(() => babelrc_build)
 
 test("return Object of webpack config with npm script build", () => {
+    path.resolve.mockReturnValue('/Users/guoli/Codes/material-resume-react/public')
+
     return expect(compileWebpack("build")).toMatchObject(build)
 })
 
 test("return Object of webpack config with npm script develop", () => {
+    path.resolve.mockReturnValue('/Users/guoli/Codes/material-resume-react/lib/dist')
+
     return expect(compileWebpack("develop")).toMatchObject(develop)
 })
 
 test("return Object of webpack config with other npm script", () => {
+    path.resolve.mockReturnValue('/Users/guoli/Codes/material-resume-react/lib/dist')
+
     return expect(compileWebpack("other")).toMatchObject(other)
 })
