@@ -83,9 +83,9 @@ In lib/api/config.json config you resume items
 - [ ] increase themes
 - [ ] combine compile-html.js and build-html.js to html.js
 - [ ] server-build mode
-- [ ] advance test
+- [X] advance test with jest
 - [ ] add eslint
-- [ ] add travis ci
+- [X] add travis ci
 
 ## LICENSE
 
