@@ -1,7 +1,7 @@
 
 # Curritae
 
-[![Codecov](https://img.shields.io/codecov/c/github/guoliim/resume-by-react.svg)](https://codecov.io/gh/guoliim/resume-by-react) [![Build Status](https://travis-ci.org/guoliim/curritae.svg?branch=master)](https://travis-ci.org/guoliim/curritae)
+[![Codecov](https://img.shields.io/codecov/c/github/guoliim/curritae.svg)](https://codecov.io/gh/guoliim/curritae) [![Build Status](https://travis-ci.org/guoliim/curritae.svg?branch=master)](https://travis-ci.org/guoliim/curritae)
 
 A starter kit for resume generator boilerplate && framework, based on:
 
