@@ -50,13 +50,13 @@ First
 Compile mode
 
 ```bash
-    &npm run compile
+    $npm run compile
 ```
 
 Develop mode in root directory with **Hot Reload React Component** by webpack, devMiddleware, hotMiddleware
 
 ```bash
-    &npm run develop
+    $npm run develop
 ```
 
 Building mode (production target) in root directory, output **static files** in public/
