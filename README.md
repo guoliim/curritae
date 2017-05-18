@@ -85,6 +85,7 @@ In lib/api/config.json config you resume items
 - [ ] server-build mode
 - [ ] advance test
 - [ ] add eslint
+- [ ] add travis ci
 
 ## LICENSE
 
