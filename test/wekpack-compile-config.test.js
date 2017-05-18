@@ -3,6 +3,8 @@ import compileWebpack from '../lib/webpack.complieConfig'
 jest.mock('../lib/babel-config')
 import babelConfig from '../lib/babel-config'
 
+//TODO add mock for 'path'
+
 const babelrc_build = {
     "presets": [
         "flow",
@@ -191,9 +193,10 @@ const other = {
     "plugins": [],
 }
 
-babelConfig.mockImplementation(() => babelrc_build )
+babelConfig.mockImplementation(() => babelrc_build)
     .mockImplementationOnce(() => babelrc_build)
     .mockImplementationOnce(() => babelrc_develop)
+    .mockImplementationOnce(() => babelrc_build)
 
 test("return Object of webpack config with npm script build", () => {
     return expect(compileWebpack("build")).toMatchObject(build)

@@ -6,6 +6,8 @@ import fs from 'fs'
 jest.mock('webpack')
 import webpack from 'webpack'
 
+//TODO add mock for 'path'
+
 const config = {
     "entry": ["../src/index.js",],
     "output": {
