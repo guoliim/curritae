@@ -1,7 +1,7 @@
 
 # Curritae
 
-[![Codecov](https://img.shields.io/codecov/c/github/guoliim/curritae.svg)](https://codecov.io/gh/guoliim/curritae) [![Build Status](https://travis-ci.org/guoliim/curritae.svg?branch=master)](https://travis-ci.org/guoliim/curritae)
+[![Codecov][codecov-image]][codecov-url] [![Build Status][travis-image]][travis-url] [![codebeat badge][codebeat-image]][codebeat-url]
 
 A starter kit for resume generator boilerplate && framework, based on:
 
@@ -91,6 +91,12 @@ In lib/api/config.json config you resume items
 
 This project is under the MIT license. See the [LICENSE](./LISENCE) file for the full license text
 
+[codecov-image]: https://img.shields.io/codecov/c/github/guoliim/curritae.svg
+[codecov-url]: https://codecov.io/gh/guoliim/curritae
+[travis-image]: https://travis-ci.org/guoliim/curritae.svg?branch=master
+[travis-url]: https://travis-ci.org/guoliim/curritae
+[codebeat-image]: https://codebeat.co/badges/a604c793-4925-483d-b6d5-cb441de90fcb
+[codebeat-url]: https://codebeat.co/projects/github-com-guoliim-curritae-master
 
 
 
