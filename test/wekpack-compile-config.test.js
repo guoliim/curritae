@@ -1,4 +1,5 @@
 import compileWebpack from '../lib/webpack.complieConfig'
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
 jest.mock('../lib/babel-config')
 import babelConfig from '../lib/babel-config'
@@ -58,15 +59,7 @@ const build = {
             },
             {
                 test: /\.css$/,
-                use: [ 'style-loader',
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            importLoaders: 1,
-                        },
-                    },
-                    'postcss-loader',
-                ],
+                use: ExtractTextPlugin.extract([ 'css-loader', 'postcss-loader' ]),
             },
             {
                 test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
@@ -78,7 +71,11 @@ const build = {
         ]
     },
     "devtool": false,
-    "plugins": [],
+    "plugins": [{
+        "filename": "styles.css",
+          "id": 1,
+          "options": {},
+    }]
 }
 
 const develop = {
