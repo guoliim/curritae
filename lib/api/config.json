@@ -35,9 +35,9 @@
     "detail":["熟悉前端MV*模型","了解基本的后台开发NodeJS","了解基本web相关技术: Socket.io、Express","使用项目管理和协同工具: Git","了解Oracle的使用","了解LISP语言"]
   }],
   "experiences":[{
-    "item":"-angular-resume-generator",
-    "link":"https://github.com/holyshawn/angular-resume-generator.git",
-    "detail":"这份简历生成器,使用 AngularJS 轻应用框架设计响应页面,读取 json 个人数据,借助 Material Design Lite 设计简历风格,通过 Node.js http-server 驱动页面生成。"
+    "item":"-curritae",
+    "link":"https://github.com/guoliim/curritae",
+    "detail":"简历生成器。前端使用 React，具有两种模式 1.开发模式 2.输出静态文件模式。服务端渲染使用 Koa，在开发模式中具有热加载功能。读取 json 文件，作为配置选项信息。"
   },{
     "item":"-fantasie",
     "link":"https://github.com/holyshawn/fantasie.git",

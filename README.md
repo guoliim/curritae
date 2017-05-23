@@ -73,12 +73,14 @@ In lib/api/config.json config you resume items
 
 ## Issues
 
-+ test build.js for comment running build(), without testing add running build()
++ how to use webpack in server-side rendering, maybe use [static-site-generator-webpack-plugin](https://github.com/markdalgleish/static-site-generator-webpack-plugin)
++ pre-render routes at build time, rather than requiring a Node server in production ?
 
 ## Todo
+- [ ] **think about Server-Side Rendering**
 - [ ] Add Getting Started
 - [ ] dynamic config api
-- [ ] router in frontend
+- [ ] **improve routes in frontend**
 - [ ] theme wrapper
 - [ ] increase themes
 - [ ] combine compile-html.js and build-html.js to html.js

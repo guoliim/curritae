@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
 import Head from './Head'
 import MainContainer from './MainContainer'
 
@@ -28,6 +29,8 @@ class Container extends React.Component {
     }
 
     render() {
+        // const detail = json5.parse(fs.readFileSync('./api/config.json', 'utf-8'))
+
         return(
             <div className="mdl-card mdl-shadow--2dp resume">
                 <Head name={this.state.detail.name}/>

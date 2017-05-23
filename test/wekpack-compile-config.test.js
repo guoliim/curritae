@@ -33,7 +33,7 @@ const babelrc_develop = {
 }
 
 const build = {
-    "entry": ["../src/index.js",],
+    "entry": ["../views/index.js",],
     "output": {
         path: '/Users/guoli/Codes/material-resume-react/public',
         filename: 'bundle.js',
@@ -75,13 +75,14 @@ const build = {
         "filename": "styles.css",
           "id": 1,
           "options": {},
-    }]
+    }],
+    "target": "web",
 }
 
 const develop = {
     "entry": [
         require.resolve('webpack-hot-middleware/client'),
-        "../src/index.js",
+        "../views/index.js",
     ],
     "output": {
         path: "/Users/guoli/Codes/material-resume-react/lib/dist",
@@ -136,13 +137,12 @@ const develop = {
         {
           "fullBuildTimeout": 200, "multiStep": undefined,
         },
-        {},
-
-],
+        {},],
+    "target": "web",
 }
 
 const other = {
-    "entry": ["../src/index.js",],
+    "entry": ["../views/index.js",],
     "output": {
         path: "/Users/guoli/Codes/material-resume-react/lib/dist",
         filename: 'bundle.js',

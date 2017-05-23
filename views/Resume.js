@@ -1,5 +1,7 @@
 import React from 'react'
-import Container from './components/Container'
+import { BrowserRouter, Route } from 'react-router-dom'
+
+import routes from './routes'
 
 import '../style/material.css';
 import '../style/resume.css';
@@ -7,9 +9,9 @@ import '../style/resume.css';
 class Resume extends React.Component {
     render() {
         return(
-            <div>
-                <Container/>
-            </div>
+            <BrowserRouter>
+                <Route {...routes[0]}/>
+            </BrowserRouter>
         )
     }
 }
