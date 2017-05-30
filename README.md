@@ -73,20 +73,22 @@ In lib/api/config.json config you resume items
 
 ## Issues
 
-+ how to use webpack in server-side rendering, maybe use [static-site-generator-webpack-plugin](https://github.com/markdalgleish/static-site-generator-webpack-plugin)
-+ pre-render routes at build time, rather than requiring a Node server in production ?
++ using babel for bundling react component and public assets into one bundle.js just like webpack
++ react `this.props.item` in tag `<script>{props.item}</script>` has character escaping problem
 
 ## Todo
-- [ ] **think about Server-Side Rendering**
+- [ ] combine compile-html.js and build-html.js to html.js
+- [ ] **remove the root/views dir**
+- [ ] responsive ui fro more than one platform (desktop, mobile, pad)
+- [ ] **improve routes in frontend**
+- [ ] **STILL DO PWA**
 - [ ] Add Getting Started
 - [ ] dynamic config api
-- [ ] **improve routes in frontend**
 - [ ] theme wrapper
-- [ ] increase themes
-- [ ] combine compile-html.js and build-html.js to html.js
-- [ ] server-build mode
-- [X] advance test with jest
 - [ ] add eslint
+- [X] **think about Server-Side Rendering**
+- [X] server-build mode
+- [X] advance test with jest
 - [X] add travis ci
 
 ## LICENSE

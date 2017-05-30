@@ -29,7 +29,6 @@ class Container extends React.Component {
     }
 
     render() {
-        // const detail = json5.parse(fs.readFileSync('./api/config.json', 'utf-8'))
 
         return(
             <div className="mdl-card mdl-shadow--2dp resume">

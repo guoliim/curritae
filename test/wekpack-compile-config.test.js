@@ -189,6 +189,7 @@ const other = {
     },
     "devtool": false,
     "plugins": [],
+    "target": "web",
 }
 
 babelConfig.mockImplementation(() => babelrc_build)
