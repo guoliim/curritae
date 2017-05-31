@@ -1,5 +1,5 @@
 // @flow
-import babelConfig from '../lib/babel-config'
+import babelConfig from '../lib/utils/babel-config'
 
 //TODO add mock for 'path'
 

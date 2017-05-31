@@ -8,7 +8,7 @@
     "compile": "babel lib --out-dir dist",
     "assets": "mkdir -p dist/style && cp -a style/ dist/style && mkdir -p dist/img && cp -a img/ dist/img",
     "build": "npm run compile && cd dist/ && node build.js",
-    "develop": "npm run compile && cd dist/ && node index.js",
+    "develop": "npm run compile && cd dist/ && node develop.js",
     "server": "npm run compile && npm run assets && cd dist/ && node server-build.js",
     "test": "jest"
   },

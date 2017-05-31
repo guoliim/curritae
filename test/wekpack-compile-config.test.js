@@ -1,8 +1,8 @@
-import compileWebpack from '../lib/webpack.complieConfig'
+import compileWebpack from '../lib/utils/webpack.complieConfig'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
 jest.mock('../lib/babel-config')
-import babelConfig from '../lib/babel-config'
+import babelConfig from '../lib/utils/babel-config'
 
 jest.mock('path')
 import path from 'path'

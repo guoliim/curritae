@@ -1,4 +1,4 @@
-import build from '../../lib/build-static'
+import build from '../../lib/utils/build-static'
 
 jest.mock('fs')
 import fs from 'fs'
