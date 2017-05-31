@@ -13,5 +13,5 @@ node_modules
 /coverage/
 /koa2.js
 /webpack.config.js
-/lib/server-build2.js
 /lib/webpack.config.js
+/lib/server-build.js.bak
