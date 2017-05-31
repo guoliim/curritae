@@ -33,7 +33,7 @@ const babelrc_develop = {
 }
 
 const build = {
-    "entry": ["../views/index.js",],
+    "entry": ["../views/Resume.js",],
     "output": {
         path: '/Users/guoli/Codes/material-resume-react/public',
         filename: 'bundle.js',
@@ -82,7 +82,7 @@ const build = {
 const develop = {
     "entry": [
         require.resolve('webpack-hot-middleware/client'),
-        "../views/index.js",
+        "../views/Resume.js",
     ],
     "output": {
         path: "/Users/guoli/Codes/material-resume-react/lib/dist",
@@ -142,7 +142,7 @@ const develop = {
 }
 
 const other = {
-    "entry": ["../views/index.js",],
+    "entry": ["../views/Resume.js",],
     "output": {
         path: "/Users/guoli/Codes/material-resume-react/lib/dist",
         filename: 'bundle.js',

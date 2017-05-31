@@ -5,9 +5,21 @@ class Undergraduate extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            time: this.props.time,
-            school: this.props.school,
-            spec: this.props.spec
+            time: this.props.time || "",
+            school: this.props.school || "",
+            spec: this.props.spec || "",
+        }
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (this.props.time !== nextProps.time) {
+            this.setState({time: nextProps.time})
+        }
+        if (this.props.school !== nextProps.school) {
+            this.setState({school: nextProps.school})
+        }
+        if (this.props.spec !== nextProps.spec) {
+            this.setState({spec: nextProps.spec})
         }
     }
 

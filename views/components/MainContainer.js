@@ -5,15 +5,16 @@ import Right from './Right'
 
 class MainContainer extends React.Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
-            detail: {}
+            detail: this.props.detail || {}
         }
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log(nextProps);
-        this.setState({detail: nextProps.detail});
+        if (this.props.detail !== nextProps.detail) {
+            this.setState({detail: nextProps.detail})
+        }
     }
 
     render() {

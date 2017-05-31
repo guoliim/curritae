@@ -7,13 +7,14 @@ class Experience extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            exps: []
+            exps: this.props.exps || []
         }
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log(nextProps);
-        this.setState({exps: nextProps.exps});
+        if ( this.props.exps !== nextProps.exps) {
+            this.setState({exps: nextProps.exps});
+        }
     }
 
     render() {

@@ -7,13 +7,14 @@ class Language extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            lang: this.props.lang
+            lang: this.props.lang || ""
         }
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log(nextProps);
-        this.setState({lang: nextProps.lang});
+        if (this.props.lang !== nextProps.lang) {
+            this.setState({lang: nextProps.lang})
+        }
     }
 
     render() {

@@ -7,13 +7,14 @@ class Education extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            edus: []
+            edus: this.props.education || []
         }
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log(nextProps);
-        this.setState({edus: nextProps.education});
+        if (this.props.education !== nextProps.education) {
+            this.setState({edus: nextProps.education})
+        }
     }
 
     render() {

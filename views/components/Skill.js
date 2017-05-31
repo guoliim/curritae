@@ -7,13 +7,14 @@ class Skill extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            skills: []
+            skills: this.props.skills || []
         }
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log(nextProps);
-        this.setState({skills: nextProps.skills});
+        if (this.props.skills !== nextProps.skills) {
+            this.setState({skills: nextProps.skills})
+        }
     }
 
     render() {

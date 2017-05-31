@@ -6,11 +6,24 @@ class Works extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            item: this.props.value.item,
-            time: this.props.value.time,
-            detail: this.props.value.detail
+            item: this.props.value.item || "",
+            time: this.props.value.time || "",
+            detail: this.props.value.detail || [],
         }
     }
+
+    componentWillReceiveProps(nextProps) {
+        if (this.props.value.item !== nextProps.value.item) {
+            this.setState({item: nextProps.value.item})
+        }
+        if (this.props.value.time !== nextProps.value.time) {
+            this.setState({time: nextProps.value.time})
+        }
+        if (this.props.value.detail !== nextProps.value.detail) {
+            this.setState({detail: nextProps.value.detail})
+        }
+    }
+
     render() {
         return(
             <div className="spacing">

@@ -8,13 +8,14 @@ class Left extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            detail: {}
+            detail: this.props.detail || {}
         }
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log(nextProps);
-        this.setState({detail: nextProps.detail});
+        if (this.props.detail !== nextProps) {
+            this.setState({detail: nextProps.detail})
+        }
     }
 
     render() {

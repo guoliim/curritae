@@ -7,13 +7,14 @@ class Work extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            works: []
+            works: this.props.work || []
         }
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log(nextProps);
-        this.setState({works: nextProps.work});
+        if (this.props.work !== nextProps.work) {
+            this.setState({works: nextProps.work})
+        }
     }
 
     render() {

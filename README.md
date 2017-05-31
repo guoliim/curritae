@@ -78,7 +78,7 @@ In lib/api/config.json config you resume items
 + react `this.props.item` in tag `<script>{props.item}</script>` has character escaping problem
 
 ## Todo
-- [ ] combine compile-html.js and build-html.js to html.js
+- [X] combine compile-html.js and build-html.js to html.js
 - [ ] **remove the root/views dir**
 - [ ] responsive ui fro more than one platform (desktop, mobile, pad)
 - [ ] **improve routes in frontend**

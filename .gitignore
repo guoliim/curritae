@@ -11,3 +11,7 @@ node_modules
 /lib/developed-html.js
 /dist.bak/
 /coverage/
+/koa2.js
+/webpack.config.js
+/lib/server-build2.js
+/lib/webpack.config.js

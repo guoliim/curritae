@@ -6,30 +6,31 @@ import MainContainer from './MainContainer'
 
 class Container extends React.Component {
     constructor(props) {
-        super(props);
-        this.state = {detail: {}};
+        super(props)
+        this.state = { detail: this.props.detail || {} }
     }
 
     componentDidMount() {
-        fetch("./api/config.json",{
-
-        }).then(res => {
-            if(res.ok) {
-                res.json().then(data => {
-                    console.log(data);
-                    let detail = data;
-                    this.setState({detail: detail});
-                });
-            } else {
-                console.log("ERROR : ", res.status);
-            }
-        }, e => {
-            console.log("Fetch failed", e);
-        });
+        console.log('Container')
+        console.log(this.props.detail)
+        if (!this.props.detail) {
+            fetch("./api/config.json",{}).then(res => {
+                if(res.ok) {
+                    res.json().then(data => {
+                        console.log(data);
+                        let detail = data;
+                        this.setState({detail: detail});
+                    });
+                } else {
+                    console.log("ERROR : ", res.status);
+                }
+            }, e => {
+                console.log("Fetch failed", e);
+            });
+        }
     }
 
     render() {
-
         return(
             <div className="mdl-card mdl-shadow--2dp resume">
                 <Head name={this.state.detail.name}/>
