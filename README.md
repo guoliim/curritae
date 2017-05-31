@@ -73,7 +73,7 @@ In lib/api/config.json config you resume items
 
 ## Issues
 
-+ **Koa2 packed by webpack2** have problem which can not in node.js
++ **Koa2 packed by webpack2** have problem which can not work in node.js
 + using babel for bundling react component and public assets into one bundle.js just like webpack
 + react `this.props.item` in tag `<script>{props.item}</script>` has character escaping problem
 
