@@ -79,7 +79,7 @@ In lib/api/config.json config you resume items
 
 ## Todo
 - [X] combine compile-html.js and build-html.js to html.js
-- [ ] **remove the root/views dir**
+- [X] **remove the root/views dir**
 - [ ] responsive ui fro more than one platform (desktop, mobile, pad)
 - [ ] **improve routes in frontend**
 - [ ] **STILL DO PWA**

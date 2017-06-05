@@ -1,7 +1,7 @@
 import compileWebpack from '../lib/utils/webpack.complieConfig'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
-jest.mock('../lib/babel-config')
+jest.mock('../lib/utils/babel-config')
 import babelConfig from '../lib/utils/babel-config'
 
 jest.mock('path')
@@ -33,7 +33,7 @@ const babelrc_develop = {
 }
 
 const build = {
-    "entry": ["../views/Resume.js",],
+    "entry": ["../lib/views/Resume.js",],
     "output": {
         path: '/Users/guoli/Codes/material-resume-react/public',
         filename: 'bundle.js',
@@ -71,18 +71,30 @@ const build = {
         ]
     },
     "devtool": false,
-    "plugins": [{
-        "filename": "styles.css",
-          "id": 1,
-          "options": {},
-    }],
+    "plugins": [
+        {  "definitions": {
+           "process.env": {
+                 "NODE_ENV": "\"production\"",
+                   },
+          },
+        },
+        {
+            "filename": "styles.css",
+            "id": 1,
+            "options": {},
+        },
+        {},
+        {
+             "options": {},
+        },
+    ],
     "target": "web",
 }
 
 const develop = {
     "entry": [
         require.resolve('webpack-hot-middleware/client'),
-        "../views/Resume.js",
+        "../lib/views/Resume.js",
     ],
     "output": {
         path: "/Users/guoli/Codes/material-resume-react/lib/dist",
@@ -142,7 +154,7 @@ const develop = {
 }
 
 const other = {
-    "entry": ["../views/Resume.js",],
+    "entry": ["../lib/views/Resume.js",],
     "output": {
         path: "/Users/guoli/Codes/material-resume-react/lib/dist",
         filename: 'bundle.js',

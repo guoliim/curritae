@@ -6,8 +6,8 @@
   "scripts": {
     "flow": "flow",
     "compile": "babel lib --out-dir dist",
-    "assets": "mkdir -p dist/style && cp -a style/ dist/style && mkdir -p dist/img && cp -a img/ dist/img",
-    "build": "npm run compile && cd dist/ && node build.js",
+    "assets": "mkdir -p dist/img && cp -a img/ dist/img",
+    "build": "npm run compile && cd dist/ && node build.js && mkdir -p ../public/img && cp -a img/ ../public/img",
     "develop": "npm run compile && cd dist/ && node develop.js",
     "server": "npm run compile && npm run assets && cd dist/ && node server-build.js",
     "test": "jest"
