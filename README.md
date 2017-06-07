@@ -78,8 +78,7 @@ In lib/api/config.json config you resume items
 + react `this.props.item` in tag `<script>{props.item}</script>` has character escaping problem
 
 ## Todo
-- [X] combine compile-html.js and build-html.js to html.js
-- [X] **remove the root/views dir**
+- [ ] organizing component states by redux
 - [ ] responsive ui fro more than one platform (desktop, mobile, pad)
 - [ ] **improve routes in frontend**
 - [ ] **STILL DO PWA**
@@ -87,10 +86,6 @@ In lib/api/config.json config you resume items
 - [ ] dynamic config api
 - [ ] theme wrapper
 - [ ] add eslint
-- [X] **think about Server-Side Rendering**
-- [X] server-build mode
-- [X] advance test with jest
-- [X] add travis ci
 
 ## LICENSE
 
