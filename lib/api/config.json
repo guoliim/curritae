@@ -25,29 +25,29 @@
     "detail":["前端架构设计","阅读工作流实现机制原理","团队合作,制定工作计划,分配任务,保证工作进度"]
   }],
   "skill":[{
-    "item":"-HTML/CSS",
+    "item":"HTML/CSS",
     "detail":["掌握语义化的 HTML，模块化的 CSS，实现较复杂的布局","熟悉已标准化的 HTML5 / CSS3 新特性，实验项目中能尝试使用未广泛实现的新标准"]
   },{
-    "item":"-JavaScript",
+    "item":"JavaScript",
     "detail":["熟悉ES2015","熟悉JavaScript及框架搭建响应式Web App","熟悉JavaScript框架AngularJS","熟悉JavaScript框架React","熟悉 webpack 工具","了解JavaScript类库JQuery"]
   },{
-    "item":"-其它",
+    "item":"其它",
     "detail":["熟悉前端MV*模型","了解基本的后台开发NodeJS","了解基本web相关技术: Socket.io、Express","使用项目管理和协同工具: Git","了解Oracle的使用","了解LISP语言"]
   }],
   "experiences":[{
-    "item":"-curritae",
+    "item":"curritae",
     "link":"https://github.com/guoliim/curritae",
     "detail":"简历生成器。前端使用 React，具有两种模式 1.开发模式 2.输出静态文件模式。服务端渲染使用 Koa，在开发模式中具有热加载功能。读取 json 文件，作为配置选项信息。"
   },{
-    "item":"-fantasie",
+    "item":"fantasie",
     "link":"https://github.com/holyshawn/fantasie.git",
     "detail":"fantasie 项目的前端部分,实践了 CRUD SPA 的 MusicRadio Web App,使用了HTML5、CSS3、Material Design Lite Css框架、Angular.js等技术,利用双队列解决了从后台获取高清无损音频文件时,等待时间过长的问题。"
   },{
-    "item": "-guoliim-blog",
+    "item": "guoliim-blog",
     "link": "https://github.com/guoliim/guoliim-blog",
     "detail": "基于 Gatsby 搭建的静态博客生成器，此博客使用 React 框架，使用 Typography.js 进行博客内容排版，并且还在持续改进中。"
   },{
-    "item": "-typography-theme-trajan",
+    "item": "typography-theme-trajan",
     "link": "https://github.com/guoliim/typography-theme-trajan",
     "detail": "基于 typography-theme-wordpress-2016 主题而设置的 Typography.js 主题，npm下载量超过400次(于2017-05-11)"
   },{
