@@ -87,6 +87,9 @@ const build = {
         {
              "options": {},
         },
+        {
+            "options": {},
+        },
     ],
     "target": "web",
 }
