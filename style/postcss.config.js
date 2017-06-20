@@ -8,6 +8,9 @@ const config = {
                 'last 2 versions',
             ],
         }),
+        require('cssnano')({
+            preset: 'advanced',
+        }),
     ],
 };
 
