@@ -79,6 +79,9 @@ const build = {
           },
         },
         {
+            "options": {},
+        },
+        {
             "filename": "styles.css",
             "id": 1,
             "options": {},
@@ -86,9 +89,6 @@ const build = {
         {},
         {
              "options": {},
-        },
-        {
-            "options": {},
         },
     ],
     "target": "web",

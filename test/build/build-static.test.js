@@ -3,8 +3,8 @@ import build from '../../lib/utils/build-static'
 jest.mock('fs')
 import fs from 'fs'
 
-jest.mock('webpack')
-import webpack from 'webpack'
+jest.mock('../../lib/utils/webpackCompile')
+import webpackCompile from '../../lib/utils/webpackCompile'
 
 //TODO add mock for 'path'
 
@@ -58,7 +58,7 @@ const config = {
     "plugins": [],
 }
 
-webpack.mockImplementation((config, fn) => {
+webpackCompile.mockImplementation((config, fn) => {
     const err = false
     const stats = {
         info: '...',
@@ -75,47 +75,29 @@ test('build', async () => {
     fs.accessSync.mockReturnValue()
     fs.writeFileSync.mockReturnValue('undefine')
     fs.mkdirSync.mockReturnValue('undefine')
-    webpack.mockImplementation((config, fn) => {
-        const err = false
-        const stats = {
-            info: '...',
-            hasErrors: () => {
-                return false
-            }
-        }
-        fn(err, stats)
-    })
+    webpackCompile.mockReturnValue('build success')
 
     expect.assertions(1)
     expect(await build('./config.json', config)).toBe('build success')
 })
 
-test('error',async () => {
+test('error', async () => {
 
     fs.accessSync.mockImplementation(() => { throw 'error'})
     fs.writeFileSync.mockReturnValue('undefine')
     fs.mkdirSync.mockReturnValue('undefine')
-    webpack.mockImplementation((config, fn) => {
-        const err = false
-        const stats = {
-            info: '...',
-            hasErrors: () => {
-                return false
-            }
-        }
-        fn(err, stats)
-    })
+    webpackCompile.mockReturnValue('error')
 
-    // try {
-    //     await build('./config.json', config)
-    // } catch (e) {
-    //     expect(e).toMatch('error')
-    // }
+    try {
+        await build('./config.json', config)
+    } catch (e) {
+        expect(e).toMatch('error')
+    }
 
-    await expect(build('./config.json', config)).rejects.toMatch('error')
+    //await expect(build('./config.json', config)).rejects.toMatch('error')
 })
 
-test('error-2',async () => {
+test('error-2', async () => {
 
     fs.accessSync.mockImplementation(() => { throw 'error'})
         .mockImplementationOnce(()=> undefined)
@@ -123,16 +105,7 @@ test('error-2',async () => {
 
     fs.writeFileSync.mockReturnValue('undefine')
     fs.mkdirSync.mockReturnValue('undefine')
-    webpack.mockImplementation((config, fn) => {
-        const err = false
-        const stats = {
-            info: '...',
-            hasErrors: () => {
-                return false
-            }
-        }
-        fn(err, stats)
-    })
+    webpackCompile.mockReturnValue('build success')
 
     expect(await build('./config.json', config)).toBe('build success')
 })
@@ -146,16 +119,7 @@ test('error-3',async () => {
 
     fs.writeFileSync.mockReturnValue('undefine')
     fs.mkdirSync.mockReturnValue('undefine')
-    webpack.mockImplementation((config, fn) => {
-        const err = false
-        const stats = {
-            info: '...',
-            hasErrors: () => {
-                return false
-            }
-        }
-        fn(err, stats)
-    })
+    webpackCompile.mockReturnValue('build success')
 
     expect(await build('./config.json', config)).toBe('build success')
 })
@@ -165,24 +129,15 @@ test('reject', async () => {
     fs.accessSync.mockReturnValue()
     fs.writeFileSync.mockReturnValue('undefine')
     fs.mkdirSync.mockReturnValue('undefine')
-    webpack.mockImplementation((config, fn) => {
-        const err = true
-        const stats = {
-            info: '...',
-            hasErrors: () => {
-                return false
-            }
-        }
-        fn(err, stats)
-    })
+    webpackCompile.mockReturnValue('can not webpacking')
 
-    // try {
-    //     await build('./config.json', config)
-    // } catch (e) {
-    //     expect(e).toMatch('can not webpacking')
-    // }
+    try {
+        await build('./config.json', config)
+    } catch (e) {
+        expect(e).toMatch('can not webpacking')
+    }
 
-    await expect(build('./config.json', config)).rejects.toMatch('can not webpacking')
+    // await expect(build('./config.json', config)).rejects.toMatch('can not webpacking')
 })
 
 
