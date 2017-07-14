@@ -34,7 +34,7 @@ html {
     margin-right: var(--autolength);
 
     /*for pdf in A4 size*/
-    /*-width: 1200px;*/
+    /*width: 1200px;*/
 
     grid-template-columns: var(--grid-template-cols);
     grid-auto-rows: var(--grid-auto-rows);
@@ -46,6 +46,14 @@ html {
 
     .container {
         --grid-template-cols: 1fr;
+    }
+}
+
+@media print {
+
+    .container {
+        max-width: 1200px;
+        width: 1200px;
     }
 }
 
@@ -167,6 +175,13 @@ html {
 
     .left {
         --cols: var(--mobile-cols);
+    }
+}
+
+@media print {
+
+    .left {
+        height: calc(1200px * 1.4 - 240px)
     }
 }
 
@@ -453,4 +468,10 @@ html {
     line-height: 1.5rem;
     font-weight: bold;
     margin-left: 0.5rem;
+}
+
+@page {
+
+    size: A4;
+    margin: 0;
 }
